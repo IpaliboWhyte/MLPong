@@ -10,8 +10,14 @@ var client = require('twilio')(accountSid, authToken);
 
 router.post('/', function(req, res) {
 
-	res.send('<Response> <Say>Hello Monkey</Say> </Response>');
-  
+	res.send('
+		<?xml version="1.0" encoding="UTF-8"?>
+			<Response>
+    			<Gather timeout="10" finishOnKey="*">
+        			<Say>Please enter your pin number and then press star.</Say>
+    			</Gather>
+			</Response>'
+	);
 });
 
 module.exports = router;
