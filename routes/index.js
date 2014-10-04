@@ -6,4 +6,10 @@ router.get('/', function(req, res) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/respond', function(req, res) {
+
+	console.log('i requested');
+  //res.render('index', { title: 'Express' });
+});
+
 module.exports = router;
