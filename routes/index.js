@@ -9,12 +9,7 @@ router.get('/', function(req, res) {
 
 router.post('/respond', function(req, res) {
 
-	res.send('<?xml version="1.0" encoding="UTF-8"?>
-<Response>
-    <Gather timeout="10" finishOnKey="*">
-        <Say>Please enter your pin number and then press star.</Say>
-    </Gather>
-</Response>');
+	res.send('<?xml version="1.0" encoding="UTF-8"?>');
 
 	console.log('i requested');
   //res.render('index', { title: 'Express' });
