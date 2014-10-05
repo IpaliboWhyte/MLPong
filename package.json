@@ -18,7 +18,8 @@
     "serve-favicon" : "*",
     "twilio" : "*",
     "twilio-api" : "*",
-    "jwt-simple" : "*"
+    "jwt-simple" : "*",
+    "socket.io" : "*"
   },
   "devDependencies": {
     "grunt": "~0.4.5",
